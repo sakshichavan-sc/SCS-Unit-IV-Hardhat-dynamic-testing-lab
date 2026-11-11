@@ -1,0 +1,19 @@
+{
+  "name": "scs-u4-dynamic-testing-hardhat3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SCS Unit IV lab: dynamic testing with Hardhat 3",
+  "type": "module",
+  "scripts": {
+    "build": "hardhat build",
+    "test": "hardhat test solidity",
+    "test:exploit": "hardhat test solidity --grep test_Exploit",
+    "coverage": "hardhat test solidity --coverage",
+    "gas": "hardhat test solidity --gas-stats"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.16.2",
+    "hardhat": "^3.0.0"
+  }
+}
